@@ -43,11 +43,15 @@ body {
 .header-cointainer {
   text-align: center;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: auto;
   width: 1200px;
 }
 .navigation {
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
 }
 .logo {
   color: var(--dark-color);
@@ -65,7 +69,7 @@ body {
   list-style: none;
   display: inline-flex;
   gap: 46px;
-  margin-left: 93px;
+  /* margin-left: 93px; */
 }
 .menu .active {
   color: var(--logo-color);
@@ -89,9 +93,8 @@ body {
 
 .adres {
   list-style: none;
-  display: inline-flex;
+  display: flex;
   gap: 50px;
-  margin-left: 371px;
 }
 .adres p {
   color: var(--second-color);
@@ -166,22 +169,23 @@ body {
   padding: 0;
 }
 
-.window h2 {
+.window-title h2 {
   color: #212121;
   font-family: "Roboto";
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-left: 24px;
   text-align: left;
 }
-.window p {
+.window-title p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  padding-left: 24px;
   text-align: left;
+}
+.window-title {
+  padding: 20px 24px;
 }
 .footer-cointainer {
   display: flex;
